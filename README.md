@@ -10,7 +10,7 @@
 
 ![Linguagens mais usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=felipe783&layout=compact&theme=tokyonight&hide_border=true)
 
-![GitHub Streak](https://streak-stats.demolab.com?user=felipe783&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com?user=felipe783&theme=tokyonight&hide_border=true)
 
 ## 🔗 Links
  - Contato: [felipemulinarii@gmail.com](mailto:felipemulinarii@gmail.com)
