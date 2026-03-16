@@ -1,11 +1,11 @@
-<h1 align="center">Felipe Prior Mulinari</h1>
+# Felipe Prior Mulinari
 
-<h2 align="center">📖 Cursos/Experiencias</h2>
+# 📖 Cursos/Experiencias
 
 - Atualmente cursando Engenharia de Software na FAG
 - Trabalhando na [MX Soluções](https://mxsolucoes.com.br) sendo suporte técnico para uma empresa de Internet em Cuiabá
 
-<h2 align="center">🚀 Sobre</h2>
+# 🚀 Sobre
 
 - Trabalhando com: Java · Docker · MySQL · Python · HTML · React  
 - Interessado em: Em desenvolvimento full-stack, e infra
@@ -19,11 +19,11 @@
   <img src="https://streak-stats.demolab.com?user=felipe783&theme=tokyonight&hide_border=true"/>
 </p>
 
-<h2 align="center">🔗 Links</h2>
+# 🔗 Links
 
 - Contato: [felipemulinarii@gmail.com](mailto:felipemulinarii@gmail.com)
 
-<h2 align="center">🏆 Extras</h2>
+# 🏆 Extras
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=felipe783&theme=tokyonight&no-frame=true)
 
