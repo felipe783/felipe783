@@ -1,14 +1,8 @@
-# 👋 Olá! Eu sou o SEU_NOME
-
-🎯 Desenvolvedor | Apaixonado por código, café e deploys às 3 da manhã.
-
----
+# Felipe Prior Mulinari
 
 ## 🚀 Sobre
-- Trabalhando com: Java · Docker · MySQL · Python  
-- Interessado em: sistemas distribuídos, automação e back-end eficiente.
-
----
+- Trabalhando com: Java · Docker · MySQL · Python · Html · React  
+- Interessado em: automação e em desenvolvimento fullstack
 
 ## 📊 Estatísticas
 
@@ -18,31 +12,10 @@
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=SEU_USUARIO&hide_border=true)
 
----
-
-## 🧰 Tech / Ferramentas
-- Java, Spring, Maven
-- Docker, Docker Compose
-- MySQL, PostgreSQL
-- Git, GitHub
-
----
-
 ## 🔗 Links
-- Portfólio: https://seu-site.exemplo  
-- Contato: [seu.email@exemplo.com](mailto:seu.email@exemplo.com)
-
----
+ - Contato: [felipemulinarii@gmail.com](mailto:felipemulinarii@gmail.com)
 
 ## 🏆 Extras
 Quer incluir troféus e badges? Adicione isto:
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=SEU_USUARIO&theme=tokyonight&no-frame=true)
-
----
-
-> **Como usar:**  
-> 1. Crie um repositório público com o nome **exato** do seu usuário GitHub (`SEU_USUARIO`).  
-> 2. Cole este `README.md` no repositório e faça commit/push.  
-> 3. Substitua `SEU_USUARIO` por seu username e `SEU_NOME` pelo seu nome.  
-> 4. Pronto — as cartas vão aparecer no seu perfil.
