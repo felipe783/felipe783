@@ -26,7 +26,3 @@
 # 🏆 Extras
 
 ![Trophies](https://github-profile-trophy.vercel.app/?username=felipe783&theme=tokyonight&no-frame=true)
-
-<h2 align="center">🐍 Contribuições</h2>
-
-![Snake animation](https://github.com/felipe783/felipe783/blob/output/github-contribution-grid-snake.svg)
