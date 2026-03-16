@@ -8,7 +8,7 @@
 # 🚀 Sobre
 
 - Trabalhando com: Java · Docker · MySQL · Python 
-- Interessado em: desenvolvimento full-stack e infraestrutura
+- Interessado em: Desenvolvimento Full-Stack e Infraestrutura
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=felipe783&show_icons=true&count_private=true&theme=tokyonight&hide_border=true" height="170"/>
