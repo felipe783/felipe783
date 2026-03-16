@@ -7,7 +7,7 @@
 
 # 🚀 Sobre
 
-- Trabalhando com: Java · Docker · MySQL · Python · HTML · React  
+- Trabalhando com: Java · Docker · MySQL · Python 
 - Interessado em: Em desenvolvimento full-stack, e infra
 
 <p align="center">
