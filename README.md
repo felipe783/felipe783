@@ -7,9 +7,7 @@
 ## 📊 Estatísticas
 
 ![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=felipe783&show_icons=true&count_private=true&theme=tokyonight&hide_border=true)
-
 ![Linguagens mais usadas](https://github-readme-stats.vercel.app/api/top-langs/?username=felipe783&layout=compact&theme=tokyonight&hide_border=true)
-
 ![GitHub Streak](https://streak-stats.demolab.com?user=felipe783&hide_border=true)
 
 ## 🔗 Links
