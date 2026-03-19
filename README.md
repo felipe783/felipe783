@@ -22,7 +22,3 @@
 # 🔗 Links
 
 - Contato: [felipemulinarii@gmail.com](mailto:felipemulinarii@gmail.com)
-
-# 🏆 Extras
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=felipe783)
