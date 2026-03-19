@@ -25,4 +25,4 @@
 
 # 🏆 Extras
 
-![Trophies](https://github-profile-trophy.vercel.app/?username=felipe783&theme=tokyonight&no-frame=true)
+![Trophies](https://github-profile-trophy.vercel.app/?username=felipe783)
