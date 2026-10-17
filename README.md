@@ -39,6 +39,10 @@ Experimentos que comparam algoritmos de IA nos mesmos problemas.
 - **Sudoku:** geração e resolução (inclusive Samurai) com Backtracking e probabilidade, só com a biblioteca padrão.
 - `Python` `PyTorch` `pygame` `Docker` · *experimental*
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake (score 167, 4x mais rápido)" width="360"/>
+</p>
+
 ### 📄 [Protheus](https://github.com/felipe783/Protheus) · extração de dados de documentos
 API que recebe um arquivo (PDF, XML, DOCX ou ODT), classifica o tipo documental por palavras-chave e extrai os campos de **CRLV-e, Cartão CNPJ e NF-e** com Regex. Leitores por extensão criados via *Factory*, em camadas inspiradas em Clean Architecture.
 - `Python` `FastAPI` `pypdf` `python-docx` · *em desenvolvimento*
@@ -46,6 +50,10 @@ API que recebe um arquivo (PDF, XML, DOCX ou ODT), classifica o tipo documental 
 ### 🎙️ [Api_ReconhecimentoVoz](https://github.com/felipe783/Api_ReconhecimentoVoz) · controle de gastos por voz
 API **Spring Boot** em que o usuário envia um áudio, que é transcrito; um LLM usa *tool calling* para registrar ou consultar transações, e a resposta volta em áudio.
 - `Java` `Spring Boot` `Spring AI` `OpenAI` `MySQL` `JPA`
+
+### 🚀 [Missao_Espacial-JAVA](https://github.com/felipe783/Missao_Espacial-JAVA) · centro de controle de missões
+Trabalho acadêmico: cadastro de foguetes, satélites, astronautas e equipes, lançamento de missões e relatórios.
+- `Java` `Spring Boot` `MySQL` `Flyway` `HTML/CSS/JS` `Docker`
 
 ### 🤖 [Bot-Discord](https://github.com/felipe783/Bot-Discord) · bot com slash commands
 Bot para um servidor com história colaborativa publicada diariamente, Blackjack com *timeout* como aposta e busca de mods na API do Modrinth. Comandos carregados automaticamente por *cogs*; roda em container num Ubuntu Server.
