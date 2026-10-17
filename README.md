@@ -13,7 +13,7 @@
 
 ## Sobre mim
 
-- 🎓 Cursando **Engenharia de Software** na **FAG**.
+- 🎓 Cursando **Engenharia de Software** na [**FAG**](https://www.fag.edu.br/).
 - 💼 Trabalho na [**MX Soluções**](https://mxsolucoes.com.br) com **suporte técnico** para um provedor de internet em Cuiabá.
 - 🧠 Interesse em **desenvolvimento backend** e **inteligência artificial**: APIs, visão computacional e aprendizado por reforço.
 
