@@ -40,7 +40,7 @@ Experimentos que comparam algoritmos de IA nos mesmos problemas.
 - `Python` `PyTorch` `pygame` `Docker` · *experimental*
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake (score 167, 4x mais rápido)" width="360"/>
+  <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake (score 167, 2x mais rápido)" width="360"/>
 </p>
 
 ### 📄 [Protheus](https://github.com/felipe783/Protheus) · extração de dados de documentos
