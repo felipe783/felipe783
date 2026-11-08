@@ -43,16 +43,6 @@ Um agente que aprende Snake com Double DQN em PyTorch. A primeira versão aprend
   <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake" width="320"/>
 </p>
 
-### Hivecast · telemetria offline-first
-
-Sou o desenvolvedor do RaspberryAgent, a camada de software de uma colmeia inteligente: coleta peso e temperatura vindos dos sensores e sincroniza com o servidor mesmo com a rede caindo.
-
-- **Como:** SQLite com WAL funciona como fila persistente, e cada medição recebe um UUID na origem. Assim a leitura fica segura no commit local e reenviar nunca duplica. Retry com backoff separa falhas temporárias de permanentes.
-- **Desafio:** revisando a validação, encontrei faixas de temperatura que descartariam exatamente as anomalias que o monitoramento existe para detectar.
-
-`Python` `SQLite` `Pydantic Settings` `httpx` `pytest`<br/>
-<sub>Projeto de um colega, com equipe de hardware · repositório privado · [estudo de caso](https://felipemulinari.vercel.app/projetos/hivecast)</sub>
-
 ### [Protheus](https://github.com/felipe783/Protheus) · extração de documentos
 
 API que recebe PDF, XML, DOCX ou ODT, classifica o tipo de documento e extrai os campos de CRLV-e, Cartão CNPJ e NF-e.
@@ -80,6 +70,8 @@ Contas, investimentos com cotações, patrimônio, orçamentos e metas.
 | S.C.A e frontends demonstrativos | Interfaces sem backend para apresentações; o S.C.A aproxima colegas de escola que jogam os mesmos jogos. Demos: [S.C.A](https://sca-sempre-com-amigos.vercel.app) · [Taewkondo](https://taewkondo.vercel.app) · [M&J](https://mj-psi-dun.vercel.app) | TypeScript, React, Next.js, Vitest |
 | [Bot-Discord](https://github.com/felipe783/Bot-Discord) | Slash commands com história colaborativa diária, Blackjack e busca de mods no Modrinth | Python, discord.py, Docker |
 | [Missão Espacial](https://github.com/felipe783/Missao_Espacial-JAVA) | Centro de controle de missões (atividade de sala) | Java, Spring Boot, MySQL, Flyway |
+
+> Também colaboro no **Hivecast**, projeto de um colega para telemetria de colmeias, desenvolvendo o agente que coleta e sincroniza as medições.
 
 ## Tecnologias
 
