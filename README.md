@@ -12,9 +12,7 @@
 
 ---
 
-Gosto de entender como as coisas funcionam por dentro antes de confiar nelas. Nos meus projetos isso costuma virar a mesma pergunta: **o número que o sistema mostra é verdadeiro?** Já respondi isso medindo um detector contra a contagem humana, reavaliando um agente de aprendizado por reforço com sementes novas e testando se o banco de dados realmente isola um usuário do outro.
-
-Aprendo construindo e documento o que descubro, inclusive o que deu errado. Meus interesses principais são arquitetura de software, IA e machine learning, backend, infraestrutura e engenharia de dados.
+Meu foco é **inteligência artificial, machine learning e backend**: treinar e avaliar modelos e construir as APIs que colocam esses modelos para funcionar. Aprendo construindo e documento o que descubro, inclusive o que deu errado.
 
 > O [**portfólio**](https://felipemulinari.vercel.app) tem os estudos de caso completos, com decisões, limitações e próximos passos de cada projeto.
 
