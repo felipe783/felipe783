@@ -1,83 +1,111 @@
 <h1 align="center">Felipe Prior Mulinari</h1>
 
 <p align="center">
-  Estudante de Engenharia de Software · Backend e Inteligência Artificial
+  Estudante de Engenharia de Software na FAG<br/>
+  <sub>backend · inteligência artificial · infraestrutura</sub>
 </p>
 
 <p align="center">
-  <a href="mailto:felipemulinarii@gmail.com"><img src="https://img.shields.io/badge/Email-felipemulinarii%40gmail.com-7aa2f7?style=flat-square&logo=gmail&logoColor=white&labelColor=1a1b27" alt="Email"/></a>
-  <a href="https://mxsolucoes.com.br"><img src="https://img.shields.io/badge/MX%20Solu%C3%A7%C3%B5es-Suporte%20T%C3%A9cnico-bb9af7?style=flat-square&labelColor=1a1b27" alt="MX Soluções"/></a>
+  <a href="https://felipemulinari.vercel.app"><img src="https://img.shields.io/badge/Portf%C3%B3lio-felipemulinari.vercel.app-1b2bff?style=for-the-badge&labelColor=101114" alt="Portfólio: felipemulinari.vercel.app"/></a>
+  <a href="mailto:felipemulinarii@gmail.com"><img src="https://img.shields.io/badge/E--mail-felipemulinarii%40gmail.com-1b2bff?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101114" alt="E-mail: felipemulinarii@gmail.com"/></a>
 </p>
 
 ---
 
-## Sobre mim
+Gosto de entender como as coisas funcionam por dentro antes de confiar nelas. Nos meus projetos isso costuma virar a mesma pergunta: **o número que o sistema mostra é verdadeiro?** Já respondi isso medindo um detector contra a contagem humana, reavaliando um agente de aprendizado por reforço com sementes novas e testando se o banco de dados realmente isola um usuário do outro.
 
-- 🎓 Cursando **Engenharia de Software** na **FAG**.
-- 💼 Trabalho na [**MX Soluções**](https://mxsolucoes.com.br) com **suporte técnico** para um provedor de internet em Cuiabá.
-- 🧠 Interesse em **desenvolvimento backend** e **inteligência artificial**: APIs, visão computacional e aprendizado por reforço.
+Aprendo construindo e documento o que descubro, inclusive o que deu errado. Meus interesses principais são arquitetura de software, IA e machine learning, backend, infraestrutura e engenharia de dados.
 
-## Tecnologias
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,python,fastapi,pytorch,mysql,postgres,docker,linux,html,css,js&theme=dark" alt="Java, Spring, Python, FastAPI, PyTorch, MySQL, PostgreSQL, Docker, Linux, HTML, CSS, JavaScript"/>
-</p>
-
----
+> O [**portfólio**](https://felipemulinari.vercel.app) tem os estudos de caso completos, com decisões, limitações e próximos passos de cada projeto.
 
 ## Projetos em destaque
 
-### 🐀 Ai_Ratos · contagem de passos com visão computacional
-Conta os passos das quatro patas de ratos filmados em esteira. Um modelo **YOLO11n** treinado com uma classe por pata detecta as patas, e um rastreador próprio por máquina de estados transforma as detecções em passos, comparados depois com a contagem humana.
-- API **FastAPI** com autenticação (Argon2, sessões), fila de análises e limites de recurso; **PostgreSQL** com migrações Alembic.
-- Interface desktop com **Tauri** e implantação com **Docker Compose**.
-- `Python` `YOLO11n` `OpenCV` `FastAPI` `PostgreSQL` `Docker` `Tauri` · *em desenvolvimento · repositório privado*
+### IA_Ratos · visão computacional
 
-### 🐍 [Teste_AI](https://github.com/felipe783/Teste_AI) · IA aplicada a jogos
-Experimentos que comparam algoritmos de IA nos mesmos problemas.
-- **Snake:** agente com **Deep Q-Learning** (Double DQN, estado com BFS de espaço livre) e com **Algoritmo Genético**, treinados em **PyTorch**; treino longo em servidor com Docker.
-- **Sudoku:** geração e resolução (inclusive Samurai) com Backtracking e probabilidade, só com a biblioteca padrão.
-- `Python` `PyTorch` `pygame` `Docker` · *experimental*
+Conta os passos das quatro patas de ratos filmados em esteira, uma tarefa que em pesquisa de marcha é feita à mão, quadro a quadro.
+
+- **Como:** um YOLO11n treinado no projeto, com uma classe por pata, e um rastreador próprio por máquina de estados. A pata levantou quando a detecção some por 0,15 s e pousou quando volta estável por 0,18 s. Cada passo vira um evento auditável no vídeo.
+- **Desafio:** a comparação com humanos era injusta, porque em 15 dos 21 vídeos o humano contou só um trecho. No recorte comparável, o erro (MAPE) é de 12,35%.
+- **Entrega:** API FastAPI com autenticação (Argon2), fila de análises e limites de recurso; app desktop em Tauri com atualização assinada; deploy com Docker e GitHub Actions.
+
+`Python` `YOLO11n` `PyTorch` `OpenCV` `FastAPI` `PostgreSQL` `Tauri` `Docker`<br/>
+<sub>Projeto em equipe de quatro pessoas · repositório privado · [estudo de caso](https://felipemulinari.vercel.app/projetos/ia-ratos)</sub>
+
+### [Snake DQN](https://github.com/felipe783/Teste_AI) · aprendizado por reforço
+
+Um agente que aprende Snake com Double DQN em PyTorch. A primeira versão aprendia a comer e depois se encurralava no próprio corpo.
+
+- **Como:** o estado passou de 11 para 21 entradas, 12 delas calculadas por BFS: espaço livre e rota até a comida e até a cauda para cada ação. O treino longo roda headless em Docker num servidor.
+- **Desafio:** uma auditoria mostrou que o agente estagnou em ~100 pontos e que selecionar e avaliar nas mesmas partidas inflava o resultado. Com sementes fora da seleção, ele faz 101,0 ± 10,3 pontos em 40 partidas. A auditoria também corrigiu dois bugs de checkpoint e deixou o treino 4,5× mais rápido.
+
+`Python` `PyTorch` `Docker` `unittest`<br/>
+<sub>Experimental · [estudo de caso](https://felipemulinari.vercel.app/projetos/snake-dqn)</sub>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake (score 167, 2x mais rápido)" width="360"/>
+  <img src="https://raw.githubusercontent.com/felipe783/Teste_AI/main/assets/snake_dqn.gif" alt="Agente DQN jogando Snake" width="320"/>
 </p>
 
-### 📄 [Protheus](https://github.com/felipe783/Protheus) · extração de dados de documentos
-API que recebe um arquivo (PDF, XML, DOCX ou ODT), classifica o tipo documental por palavras-chave e extrai os campos de **CRLV-e, Cartão CNPJ e NF-e** com Regex. Leitores por extensão criados via *Factory*, em camadas inspiradas em Clean Architecture.
-- `Python` `FastAPI` `pypdf` `python-docx` · *em desenvolvimento*
+### Hivecast · telemetria offline-first
 
-### 🎙️ [Api_ReconhecimentoVoz](https://github.com/felipe783/Api_ReconhecimentoVoz) · controle de gastos por voz
-API **Spring Boot** em que o usuário envia um áudio, que é transcrito; um LLM usa *tool calling* para registrar ou consultar transações, e a resposta volta em áudio.
-- `Java` `Spring Boot` `Spring AI` `OpenAI` `MySQL` `JPA`
+Sou o desenvolvedor do RaspberryAgent, a camada de software de uma colmeia inteligente: coleta peso e temperatura vindos dos sensores e sincroniza com o servidor mesmo com a rede caindo.
 
-### 🚀 [Missao_Espacial-JAVA](https://github.com/felipe783/Missao_Espacial-JAVA) · centro de controle de missões
-Trabalho acadêmico: cadastro de foguetes, satélites, astronautas e equipes, lançamento de missões e relatórios.
-- `Java` `Spring Boot` `MySQL` `Flyway` `HTML/CSS/JS` `Docker`
+- **Como:** SQLite com WAL funciona como fila persistente, e cada medição recebe um UUID na origem. Assim a leitura fica segura no commit local e reenviar nunca duplica. Retry com backoff separa falhas temporárias de permanentes.
+- **Desafio:** revisando a validação, encontrei faixas de temperatura que descartariam exatamente as anomalias que o monitoramento existe para detectar.
 
-### 🤖 [Bot-Discord](https://github.com/felipe783/Bot-Discord) · bot com slash commands
-Bot para um servidor com história colaborativa publicada diariamente, Blackjack com *timeout* como aposta e busca de mods na API do Modrinth. Comandos carregados automaticamente por *cogs*; roda em container num Ubuntu Server.
-- `Python` `discord.py` `Docker` · *em desenvolvimento*
+`Python` `SQLite` `Pydantic Settings` `httpx` `pytest`<br/>
+<sub>Projeto de um colega, com equipe de hardware · repositório privado · [estudo de caso](https://felipemulinari.vercel.app/projetos/hivecast)</sub>
 
-> Também colaboro no **hivecast-app**, projeto de um colega para coleta de telemetria de colmeias.
+### [Protheus](https://github.com/felipe783/Protheus) · extração de documentos
+
+API que recebe PDF, XML, DOCX ou ODT, classifica o tipo de documento e extrai os campos de CRLV-e, Cartão CNPJ e NF-e.
+
+- **Como:** Regex para layouts fixos, que são previsíveis e fáceis de testar, e leitores por extensão criados via Factory, em camadas inspiradas em Clean Architecture.
+
+`Python` `FastAPI` `pypdf` `python-docx` `pytest`<br/>
+<sub>Em desenvolvimento · [estudo de caso](https://felipemulinari.vercel.app/projetos/protheus)</sub>
+
+### [Financeiro](https://github.com/felipe783/Controle_Financeiro) · gestão financeira pessoal
+
+Contas, investimentos com cotações, patrimônio, orçamentos e metas.
+
+- **Como:** cada usuário só vê os próprios dados por Row-Level Security no PostgreSQL, com `FORCE`, garantido pelo banco e não só pela aplicação. Desligando o RLS, 12 dos 14 testes de isolamento falham.
+
+`Python` `FastAPI` `SQLAlchemy` `PostgreSQL` `React` `TypeScript` `Docker`<br/>
+<sub>Em desenvolvimento · [estudo de caso](https://felipemulinari.vercel.app/projetos/financeiro)</sub>
+
+## Outros projetos
+
+| Projeto | O que é | Stack |
+|---|---|---|
+| [Budgeting](https://github.com/felipe783/Api_ReconhecimentoVoz) | Gastos por voz: o áudio é transcrito e um LLM usa *tool calling* para registrar ou consultar transações | Java, Spring Boot, Spring AI, MySQL |
+| [Problema do Papai Noel](https://github.com/felipe783/Problema_Papai-Noel) | Sincronização com 1 mutex e 4 variáveis de condição, com 25 execuções medidas (Sistemas Operacionais) | C11, pthreads, Python |
+| S.C.A e frontends demonstrativos | Interfaces sem backend para apresentações; o S.C.A aproxima colegas de escola que jogam os mesmos jogos. Demos: [S.C.A](https://sca-sempre-com-amigos.vercel.app) · [Taewkondo](https://taewkondo.vercel.app) · [M&J](https://mj-psi-dun.vercel.app) | TypeScript, React, Next.js, Vitest |
+| [Bot-Discord](https://github.com/felipe783/Bot-Discord) | Slash commands com história colaborativa diária, Blackjack e busca de mods no Modrinth | Python, discord.py, Docker |
+| [Missão Espacial](https://github.com/felipe783/Missao_Espacial-JAVA) | Centro de controle de missões (atividade de sala) | Java, Spring Boot, MySQL, Flyway |
+
+## Tecnologias
+
+Listo só o que aparece em código meu.
+
+| Área | Uso em projetos | Estudando |
+|---|---|---|
+| Linguagens | Python, Java, C, TypeScript, SQL | |
+| Backend | FastAPI, Spring Boot, Spring AI, SQLAlchemy, Alembic | |
+| Dados | PostgreSQL (RLS), SQLite, MySQL, pandas | |
+| IA e ML | PyTorch (DQN), YOLO (Ultralytics), OpenCV, LLM com tools | adaptação de pesos e *machine unlearning* (tema do TCC) |
+| Infraestrutura | Docker, Linux (Ubuntu Server), Nginx, GitHub Actions | AWS EC2 |
+| Testes | pytest, unittest, Vitest | |
+
+## Formação e experiência
+
+- **Engenharia de Software**, FAG (em curso).
+- **Java & Spring Boot AI Developer** (Globant) e **Backend Java com Spring AI** (NTT DATA), bootcamps na DIO.
+- **Suporte técnico** na [MX Soluções](https://mxsolucoes.com.br), para um provedor de internet de Cuiabá.
+- Mantenho um **servidor doméstico** em Ubuntu Server, com containers, monitoramento pelo Uptime Kuma e alertas no Telegram.
 
 ---
 
-## Estatísticas
-
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=felipe783&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="Estatísticas do GitHub" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=felipe783&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="Linguagens mais usadas" height="165"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=felipe783&theme=tokyonight&hide_border=true" alt="Sequência de contribuições"/>
-</p>
-
----
-
-## Contato
-
-<p align="center">
-  <a href="mailto:felipemulinarii@gmail.com"><img src="https://img.shields.io/badge/Gmail-felipemulinarii%40gmail.com-7aa2f7?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1a1b27" alt="Gmail"/></a>
+  <a href="https://felipemulinari.vercel.app">Portfólio</a> ·
+  <a href="mailto:felipemulinarii@gmail.com">felipemulinarii@gmail.com</a>
 </p>
